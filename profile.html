@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kapidull</title>
+    <style>
+        /* CSS RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #2d3436;
+            background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER */
+        header {
+            background: rgba(44, 62, 80, 0.9);
+            color: #ffffff;
+            padding: 4rem 1rem;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-weight: 300;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #2c3e50;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 850px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            width: 8px;
+            height: 30px;
+            background: #e67e22;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        /* LIST SKILLS */
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        ul li {
+            background: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: 500;
+            color: #34495e;
+            transition: transform 0.2s;
+        }
+
+        ul li:hover {
+            transform: translateY(-3px);
+            background: #e67e22;
+            color: white;
+        }
+
+        /* CONTACT SECTION */
+        .contact-info {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #2c3e50;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        /* BUTTON */
+        .button {
+            display: inline-block;
+            background: #e67e22;
+            color: white !important;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #d35400;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(211, 84, 0, 0.4);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            background: #2c3e50;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PROFILE KAPIDDULLL</h1>
+        <p>website ini di buat oleh afid yang sedang gabut.</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <section id="beranda">
+            <h2>Beranda</h2>
+            <p>Halo! selamat datang di website kapiddull, website ini merupakan profile dari kapiduul.</p>
+        </section>
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Nama ku <strong>Kapidull</strong>. Saya anak tegalsari yang sekolah di SMK Takhassus Al-Quran Wonosobo jurusan PPLG. Saya memiliki minat di bidang PPLG karena saya ingin menjadi web developer, jadi website ini merupakan usaha belajar saya untuk mengetahui ilmu koding HTML. Hobi saya adalah fotografi dan memancing, kalau kalian ada info spot yang bagus jangan lupa kontak aku yaa.</p>
+            
+            <p style="margin-top: 20px;"><strong>Keahlian Saya:</strong></p>
+            <ul>
+                <li>📸 Fotografi</li>
+                <li>🌐 Coding HTML</li>
+                <li>💻 Coding C#</li>
+                <li>🎨 Menggambar</li>
+                <li>🎬 Editing</li>
+            </ul>
+        </section>
+
+        <section id="kontak">
+            <h2>Info Kontak</h2>
+            <p>Jika kalian mau menghubungi saya bisa hubungi kontak di bawah ini yaa:</p>
+            
+            <div class="contact-info">
+                <p><strong>📧 Email:</strong> afidxperia@gmail.com</p>
+                <p><strong>📞 WhatsApp:</strong> +62 813-3791-9799</p>
+                <p><strong>📍 Lokasi:</strong> Tegalsari, Wonosobo</p>
+                <p><strong>🐙 GitHub:</strong> <a href="https://github.com/kapidull" target="_blank" style="color: #2c3e50; text-decoration: underline;">github.com/kapidull</a></p>
+            </div>
+
+            <br>
+            <center>
+                <a href="mailto:afidxperia@gmail.com" class="button">Kirim Email Sekarang</a>
+            </center>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kapidull. Dibuat dengan penuh kegabutan yang bermanfaat.</p>
+    </footer>
+
+</body>
+</html>
